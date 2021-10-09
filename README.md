@@ -5,6 +5,6 @@ To use:
 - Add the log file you want to scan as inputFile
 - Run script
 - Enter the IP/string you want to search for, script will print all lines and create outputFile
-- Enter a second string to narrow it down, script will print all lines from dataLog that contain 2nd string.
+- Enter a second string to narrow it down, i.e. Received disconnect, Invalid user, etc. Script will print all lines from dataLog that also contain 2nd string.
 
 The outputFile is created after the first search, not the second "narrow it down" search, this is intentional.
