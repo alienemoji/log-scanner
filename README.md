@@ -8,3 +8,6 @@ To use:
 - Enter a second string to narrow it down, i.e. Received disconnect, Invalid user, etc. Script will print all lines from dataLog that also contain 2nd string.
 
 The outputFile is created after the first search, not the second "narrow it down" search, this is intentional.
+
+To-do:
+- Rewrite using sys.argv to accept search terms as command-line arguments
