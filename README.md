@@ -1,5 +1,5 @@
 # log-scanner
-A simple log scanner that searches for lines containing a given IP
+A simple log scanner that searches for lines containing a given IP and outputs the results to a .txt file for reporting purposes.
 
 To use:
 - Add the log file you want to scan as inputFile
