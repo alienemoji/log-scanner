@@ -12,3 +12,6 @@ A simple log scanner that searches for lines containing a given IP or string and
 - `FILENAME`: Log file to scan
 - `SEARCHQUERY`: String or IP to search for
 - `-printresults`: (Optional) Print results to terminal
+
+### To do
+- Add option to block an IP with ufw/iptables if found >n times
