@@ -1,15 +1,14 @@
 # log-scanner
-A simple log scanner that searches for lines containing a given IP and outputs the results to a .txt file for reporting purposes.
 
-See cli branch for non-interactive, scriptable version.
+A simple log scanner that searches for lines containing a given IP or string and outputs the results to a .txt file for reporting or analysis.
 
-To use:
-- Add the log file you want to scan as inputFile
-- Run script
-- Enter the IP/string you want to search for, script will print all lines and create outputFile
-- Enter a second string to narrow it down, i.e. Received disconnect, Invalid user, etc. Script will print all lines from dataLog that also contain 2nd string.
+## Usage:
+`python3 scanner.py <FILENAME> <SEARCHQUERY> -printresults`
 
-The outputFile is created after the first search, not the second "narrow it down" search, this is intentional.
+`python3 scanner.py auth.log 'Invalid user'` - Will search auth.log for lines containing the string "Invalid user"
 
-To-do:
-- Rewrite using sys.argv to accept search terms as command-line arguments
+## Command line arguments
+
+- `FILENAME`: Log file to scan
+- `SEARCHQUERY`: String or IP to search for
+- `-printresults`: (Optional) Print results to terminal
